@@ -1,0 +1,13 @@
+//This program takes a two numbers and finds the sume of its range. 
+//For instance, if the two numbers are 1 and 3, the output will be 6, since 1 + 2 + 3 = 6.
+
+const penguin = (a,b) => {
+    let c = Math.max(a,b);
+    let d = Math.min(a,b);
+    let sum = 0;
+    while (d <= c) {
+        sum = sum + d;
+        d++;
+    }
+console.log(sum);
+}
