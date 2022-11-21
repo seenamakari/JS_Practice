@@ -1,0 +1,18 @@
+//This code takes in a string and counts how many times the letter B is in it. It also gives the positions of the B's.
+
+const Seena = (a) => {  
+    let N = 0;
+    let B = 0;
+    let position = [];
+    while (N < a.length) {
+        if ((a[N]) == "B") {
+            B++;
+            position.push(N);
+        }
+        else {
+            //Do nothing
+        }
+        N++;
+    }
+    console.log("There are " + B + "B's in this string. The B's are in the positions " + position + ".");
+}
