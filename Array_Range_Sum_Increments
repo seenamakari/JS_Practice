@@ -1,0 +1,15 @@
+//The same program as Array_Range_Sum, except there is a third parameter that counts increments in the calculation.
+//For instance, if your parameters are (1, 11, 2), the calculation would be 1 + 3 + 5 + 7 + 9 + 11 = 36.
+
+const penguin = (a,b,c) => {
+    let d = Math.max(a,b);
+    let e = Math.min(a,b);
+    let sum = 0;
+    while (e < d) {
+        sum = sum + e;
+        e = e + c;
+    }
+    console.log(sum);
+}
+
+
